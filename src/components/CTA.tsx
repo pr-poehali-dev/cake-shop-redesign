@@ -23,6 +23,7 @@ const CTA = () => {
           <div className="flex flex-col sm:flex-row gap-6 justify-center mb-12 animate-scale-in">
             <Button
               size="lg"
+              onClick={() => window.open("tel:+79787654321", "_self")}
               className="bg-white text-pink-600 hover:bg-pink-50 text-lg px-8 py-6 rounded-2xl shadow-lg hover:shadow-xl font-semibold"
             >
               <Icon name="Phone" className="mr-2" size={20} />
@@ -31,6 +32,12 @@ const CTA = () => {
             <Button
               size="lg"
               variant="outline"
+              onClick={() =>
+                window.open(
+                  "https://wa.me/79787654321?text=Здравствуйте! Хочу заказать торт",
+                  "_blank",
+                )
+              }
               className="border-2 border-white text-white hover:bg-white hover:text-pink-600 text-lg px-8 py-6 rounded-2xl font-semibold"
             >
               <Icon name="MessageCircle" className="mr-2" size={20} />

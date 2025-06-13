@@ -20,6 +20,7 @@ const Hero = () => {
             <div className="flex flex-col sm:flex-row gap-4">
               <Button
                 size="lg"
+                onClick={() => window.open("tel:+79787654321", "_self")}
                 className="bg-pink-500 hover:bg-pink-600 text-lg px-8 py-6 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300"
               >
                 <Icon name="Phone" className="mr-2" size={20} />
@@ -28,6 +29,11 @@ const Hero = () => {
               <Button
                 variant="outline"
                 size="lg"
+                onClick={() =>
+                  document
+                    .getElementById("catalog")
+                    ?.scrollIntoView({ behavior: "smooth" })
+                }
                 className="border-2 border-pink-300 text-pink-600 hover:bg-pink-50 text-lg px-8 py-6 rounded-2xl"
               >
                 <Icon name="Eye" className="mr-2" size={20} />

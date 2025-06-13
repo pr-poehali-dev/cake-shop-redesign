@@ -146,7 +146,16 @@ const ProductCatalog = () => {
                   <span className="text-2xl font-bold text-pink-500">
                     {product.price}
                   </span>
-                  <Button className="bg-pink-500 hover:bg-pink-600 rounded-xl px-6">
+                  <Button
+                    onClick={() =>
+                      window.open(
+                        "https://wa.me/79787654321?text=Хочу заказать " +
+                          product.name,
+                        "_blank",
+                      )
+                    }
+                    className="bg-pink-500 hover:bg-pink-600 rounded-xl px-6"
+                  >
                     <Icon name="ShoppingCart" size={16} className="mr-2" />
                     Заказать
                   </Button>
